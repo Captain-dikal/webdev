@@ -19,6 +19,36 @@ div#flow{
     z-index:-1;
     position:absolute;
 }
+.field.has-addons{
+	clear:both;
+}
+.control.is-expanded{
+	width:calc(100% - 100px);
+	float:left;
+}
+input.input.has-text-centered{
+	width:100%;
+	text-align:center;
+}
+.control {
+    width: 100px;
+    display: inline-block;
+}
+a.button.is-info {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    background: #2988ff;
+}
+.box{
+	position:sticky;
+	top:0;
+	background:#8bc7f9;
+	padding:5px 15px;
+	border-radius:5px;
+	box-shadow:0 0 5px #0000003b;
+}
 .row.columns{
     display:table;
 }
@@ -66,49 +96,53 @@ p.title.is-4{
 	border-radius:90vw;
 	opacity:0.6;
 }
+.box {
+    clear: both;
+}
 .flow-1{
-    background:#3281ff;
-    -webkit-animation:rotating 20s linear infinite;
-    -moz-animation:rotating 20s linear infinite;
-    -ms-animation:rotating 20s linear infinite;
-    -o-animation:rotating 20s linear infinite;
-    animation:rotating 20s linear infinite;
-    display:none;
+	background:#3281ff;
+	-webkit-animation:rotating 20s linear infinite;
+	-moz-animation:rotating 20s linear infinite;
+	-ms-animation:rotating 20s linear infinite;
+	-o-animation:rotating 20s linear infinite;
+	animation:rotating 20s linear infinite;
+	display:none;
 }
 .flow-2{
-    background:#f442ee;
-    position:absolute;
-    -webkit-animation:rotating 15s linear infinite;
-    -moz-animation:rotating 15s linear infinite;
-    -ms-animation:rotating 15s linear infinite;
-    -o-animation:rotating 15s linear infinite;
-    animation:rotating 15s linear infinite;
+	background:#f442ee;
+	position:absolute;
+	-webkit-animation:rotating 15s linear infinite;
+	-moz-animation:rotating 15s linear infinite;
+	-ms-animation:rotating 15s linear infinite;
+	-o-animation:rotating 15s linear infinite;
+	animation:rotating 15s linear infinite;
 }
 .flow-3{
-    background:#42eef4;
-    position:absolute;
-    -webkit-animation:rotating 7s linear infinite;
-    -moz-animation:rotating 7s linear infinite;
-    -ms-animation:rotating 7s linear infinite;
-    -o-animation:rotating 7s linear infinite;
-    animation:rotating 7s linear infinite;
+	background:#42eef4;
+	position:absolute;
+	-webkit-animation:rotating 7s linear infinite;
+	-moz-animation:rotating 7s linear infinite;
+	-ms-animation:rotating 7s linear infinite;
+	-o-animation:rotating 7s linear infinite;
+	animation:rotating 7s linear infinite;
 }
 @-webkit-keyframes rotating{
-    from{
-        -ms-transform:rotate(0deg);
-        -moz-transform:rotate(0deg);
-        -webkit-transform:rotate(0deg);
-        -o-transform:rotate(0deg);
-        transform:rotate(0deg);
-    }
-    to{
-        -ms-transform:rotate(360deg);
-        -moz-transform:rotate(360deg);
-        -webkit-transform:rotate(360deg);
-        -o-transform:rotate(360deg);
-        transform:rotate(360deg);
-    }
-}/*
+	from{
+		-ms-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	to{
+		-ms-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+/*
 @keyframes rotating{
 from{
 -ms-transform:rotate(0deg);
