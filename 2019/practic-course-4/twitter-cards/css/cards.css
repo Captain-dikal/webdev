@@ -96,6 +96,9 @@ p.title.is-4{
 	border-radius:90vw;
 	opacity:0.6;
 }
+.content {
+    clear: both;
+}
 .box {
     clear: both;
 }
