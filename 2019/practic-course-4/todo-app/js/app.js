@@ -1,3 +1,32 @@
+function filter_task(t){
+	var ch= document.getElementsByClassName('checkbox');
+	if(t=="checked"){
+		for (var i = 0; i < ch.length; i++){
+			if(ch[i].childNodes[0].childNodes[0].checked == true){
+				//.style.display = 'block';
+			}else{
+				//.style.display = 'none';
+			}
+		}
+	}
+	if(t=="nochecked"){
+		for (var i = 0; i < ch.length; i++){
+			if(ch[i].childNodes[0].childNodes[0].checked == false){
+				//.style.display = 'block';
+			}else{
+				//.style.display = 'none';
+			}
+		}
+	}
+	if(t=="all"){
+		for (var i = 0; i < ch.length; i++){
+			if(ch[i].childNodes[0].childNodes[0].checked == true){
+				//.style.display = 'block';
+			}
+		}
+	}
+	
+}
 window.onload = function () {
   var btn = document.getElementById('button');
   var txtArea = document.getElementById('textarea');
