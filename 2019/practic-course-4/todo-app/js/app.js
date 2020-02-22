@@ -32,9 +32,39 @@ window.onload = function () {
 
     // TODO: delete task event
     icon.onclick = function () {
-      console.log('delete');
-      this.parentElement.remove();
+		this.parentElement.remove();
+		console.log('delete');
     };
+    var k = document.getElementsByClassName('checkbox').length;
+    if(k>1){
+		var l = document.getElementsByClassName('allCheck').length;
+		if(l==0){
+			var taskContent = "Check All";
+			var containerToDo = document.getElementById('container-to-do');
+			var newTask = document.createElement('div');
+			newTask.classList.add('new', 'checkbox', 'allCheck');
+			containerToDo.append(newTask);
+			var label = document.createElement('label');
+			var check = document.createElement('input');
+			check.setAttribute('type', 'checkbox');
+			label.append(check);
+			newTask.append(label);
+			var text = document.createTextNode(taskContent);
+			label.append(text);
+			txtArea.value = "";
+			newTask.onclick = function() {
+				console.log('+');
+				var ch= document.getElementsByClassName('checkbox');
+				
+				for (var i = 0; i < ch.length; i++){
+					ch[i].childNodes[0].childNodes[0].checked = true;
+					//console.log(ch[i].childNodes[0].childNodes[0]);
+				}
+			}
+		}
+	}else{
+		document.getElementsByClassName('allCheck').parentElement.remove();
+	}
   };
 
   // TODO: complete all handler here
