@@ -33,6 +33,7 @@ window.onload = function () {
     // TODO: delete task event
     icon.onclick = function () {
       console.log('delete');
+      this.parentElement.remove();
     };
   };
 
