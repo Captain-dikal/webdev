@@ -3,25 +3,25 @@ function filter_task(t){
 	if(t=="checked"){
 		for (var i = 0; i < ch.length; i++){
 			if(ch[i].childNodes[0].childNodes[0].checked == true){
-				//.style.display = 'block';
+				ch[i].childNodes[0].childNodes[0].style.display = 'block';
 			}else{
-				//.style.display = 'none';
+				ch[i].childNodes[0].childNodes[0].style.display = 'none';
 			}
 		}
 	}
 	if(t=="nochecked"){
 		for (var i = 0; i < ch.length; i++){
 			if(ch[i].childNodes[0].childNodes[0].checked == false){
-				//.style.display = 'block';
+				ch[i].childNodes[0].childNodes[0].style.display = 'block';
 			}else{
-				//.style.display = 'none';
+				ch[i].childNodes[0].childNodes[0].style.display = 'none';
 			}
 		}
 	}
 	if(t=="all"){
 		for (var i = 0; i < ch.length; i++){
 			if(ch[i].childNodes[0].childNodes[0].checked == true){
-				//.style.display = 'block';
+				ch[i].childNodes[0].childNodes[0].style.display = 'block';
 			}
 		}
 	}
