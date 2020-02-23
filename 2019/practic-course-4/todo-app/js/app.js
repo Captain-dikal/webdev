@@ -3,25 +3,25 @@ function filter_task(t){
 	if(t=="checked"){
 		for (var i = 0; i < ch.length; i++){
 			if(ch[i].childNodes[0].childNodes[0].checked == true){
-				ch[i].childNodes[0].childNodes[0].style.display = 'block';
+				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
 			}else{
-				ch[i].childNodes[0].childNodes[0].style.display = 'none';
+				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'none';
 			}
 		}
 	}
 	if(t=="nochecked"){
 		for (var i = 0; i < ch.length; i++){
 			if(ch[i].childNodes[0].childNodes[0].checked == false){
-				ch[i].childNodes[0].childNodes[0].style.display = 'block';
+				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
 			}else{
-				ch[i].childNodes[0].childNodes[0].style.display = 'none';
+				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'none';
 			}
 		}
 	}
 	if(t=="all"){
 		for (var i = 0; i < ch.length; i++){
 			if(ch[i].childNodes[0].childNodes[0].checked == true){
-				ch[i].childNodes[0].childNodes[0].style.display = 'block';
+				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
 			}
 		}
 	}
