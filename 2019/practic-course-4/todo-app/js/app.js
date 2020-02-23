@@ -9,12 +9,12 @@ function filter_task(t){
 			}
 		}
 	}
-	if(t=="nochecked"){
+	if(t=="unchecked"){
 		for (var i = 0; i < ch.length; i++){
-			if(ch[i].childNodes[0].childNodes[0].checked == false){
-				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
-			}else{
+			if(ch[i].childNodes[0].childNodes[0].checked == true){
 				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'none';
+			}else{
+				ch[i].childNodes[0].childNodes[0].parentElement.parentElement.style.display = 'block';
 			}
 		}
 	}
